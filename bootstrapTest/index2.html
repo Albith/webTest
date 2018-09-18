@@ -1,0 +1,212 @@
+<!--
+
+welcome!
+
+the code in this file is modified from Bootstrap's Starter Template.
+to see the original Bootstrap Starter Template code, go to the URL below, right click the page, and view the source code.
+
+http://getbootstrap.com/examples/starter-template/
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Lab 1: HTML, CSS, Bootstrap</title>
+
+    <!-- the line of code below references the Bootstrap CSS stylesheet, which is stored locally.-->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- This imports our local custom stylesheet-->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Custom styles for this template, taken from the bootstrap's carousel template. -->
+    <link href="css/carousel.css" rel="stylesheet">
+
+
+    <!--Including a Google font-->
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="bootstrap/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-custom navbar-fixed-top" >
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">6313: Lab 1</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#warp">Jump Down</a></li>
+            <li><a href="#jk this link doesn't actually go anywhere">Contact</a></li>
+
+            <!-- Albith: These <a> tags have a # sign, used to link to different id's in the current page.
+
+          </ul>
+        </div><!/.nav-collapse -->
+
+      </div>
+    </nav>
+
+<!-- this is the code for the carousel section -->
+
+<!-- Carousel
+================================================== -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class=""></li>
+    <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner" role="listbox">
+    <div class="item">
+      <img class="first-slide" src="imgs/DM_carousel3.png" alt="First slide">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Example headline.</h1>
+          <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
+          <p><a class="btn btn-lg btn-primary" href="https://getbootstrap.com/examples/carousel/#" role="button">Sign up today</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="item active">
+      <img class="second-slide" src="imgs/DM_carousel1.png" alt="Second slide">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Another example headline.</h1>
+          <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+          <p><a class="btn btn-lg btn-primary" href="https://getbootstrap.com/examples/carousel/#" role="button">Learn more</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <img class="third-slide" src="imgs/DM_carousel2.png" alt="Third slide">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>One more for good measure.</h1>
+          <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+          <p><a class="btn btn-lg btn-primary" href="https://getbootstrap.com/examples/carousel/#" role="button">Browse gallery</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="left carousel-control" href="https://getbootstrap.com/examples/carousel/#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="https://getbootstrap.com/examples/carousel/#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<!-- Carousel ends here -->
+
+<!-- This is the start of the secondary caption section -->
+
+      <div class="container topCaption">
+        <h1>Secondary information can go here</h1>
+        <p class="lead">Notice how the top navbar follows you while you scroll down? That's called a sticky nav. Now you can drop that in conversations and sound like a fancy web dev. Have you tried the "Jump Down" button up there?</p>
+      </div>
+
+    </div>
+
+    <!-- Secondary caption section ends here -->
+
+
+     <!-- there are some little blurb sections down here -->
+
+<div class="container mainSection">
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="img-circle" src="imgs/critiques.png" alt="Generic placeholder image" width="140" height="140">
+          <h2>Critiques</h2>
+          <p>Here are three different kinds of skills we hope you'll develop in this class. There are a variety of different critiques: during our classes, we hope to encourage productive and informed discussion around different ideas, paradigms, and concepts. This kind of critique puts to use the theoretical content from <i>ItM</i> and applies it to examples we find in our own lives.</p>
+
+          <p> We'll also be encouraging studio-type critiques, where we look at and discuss  artifacts, designs, and systems. These kinds of critiques are meant to offer constructive and relevant feedback for your colleague, giving them concrete and targeted advice on what elements of their design work well and which elements could use improvement. This skill can be verbal or written; an example of the latter is your design note exercise.
+            It's good practice to flex your critique muscles outside of class, as well! </p>
+          <p><a class="btn btn-default" href="https://thenounproject.com/search/?q=design&i=114062" role="button">Thumbnail source &raquo;</a></p>
+
+        </div>
+
+        <!-- end of first column -->
+
+        <div class="col-lg-4">
+          <img class="img-circle" src="imgs/prototypes.png" alt="Generic placeholder image" width="140" height="140">
+          <h2>Prototypes</h2>
+          <p>Prototypes refer to many things, including but not limited to: diagrams, sketches, software, or jumbles of sensors and wires. Rapid prototyping encourages iterative design, testing smaller scale ideas or concepts to see what's worth exploring further. Mockups might include user flows, UIs, or feedback loops.</p>
+          <p>You'll also be building functional artifacts in this class and prototyping will be crucial for helping everything work in the end. Both the artifacts and the sketches will be useful portfolio pieces that demonstrate your interests, skills, and personality. Whatever you build in this class is meant to serve you well in whatever environment you end up in next, be it industry, academia, or elsewhere.</p>
+          <p><a class="btn btn-default" href="https://thenounproject.com/jeffportaro/collection/touch-gestures/?oq=wireframe&cidx=6" role="button">Thumbnail source &raquo;</a></p>
+        </div>
+
+        <!-- end of second column -->
+
+        <div class="col-lg-4">
+          <img class="img-circle" src="imgs/community.png" alt="Generic placeholder image" width="160" height="140">
+          <h2>Community</h2>
+          <p>Through classes, labs, and project studios, the hope is that you'll build relationships with your colleagues, some of whom may end up in the same industry, or even workplace, as you. Take this opportunity to learn from your peers. You'll find that everyone has unique expertise and wells of knowledge. </p>
+          <p><a class="btn btn-default" href="https://thenounproject.com/search/?q=community&i=33100" role="button">Thumbnail source &raquo;</a></p>
+        </div>
+
+        <!-- end of third column -->
+
+      </div><!-- end of the blurbs -->
+
+<!-- There's a bonus panel of content down here:  the <a> tag in the navbar with #warp links down to this section. -->
+
+<div class="panel panel-info footer">
+  <div class="panel-heading">Bottom panel.</div>
+  <div class="panel-body" id="warp">
+  <p>
+    The "Jump Down" menu button is actually just a bookmark for a different section of the webpage. In addition to online content (e.g. http://www.dm.gatech.edu), < a > tags can also link to other content on the same page. Check out the source code for both the navbar and this panel to see how the bookmark works. The key to success-- as always-- is a #hashtag. </p>
+
+    <p><li class="list-group-item">And here's a sub-panel with even more information! You can click the 'Home' button to return to the top of the page, or you can click <a href="#">here</a>.</li></p>
+
+    <!-- using <p> tags introduces some margins around each section in this panel. there is a default amount of space set for the <p> tag, which you can customize in the custom css template.-->
+  </div>
+</div>
+
+</div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- scripts are placed at the end of the document so the pages load faster -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    <script>
+    document.body.scrollTop = document.body.scrollHeight;
+    </script>
+  </body>
+</html>
