@@ -1,0 +1,14 @@
+
+body{
+	background-color:orchid;
+}
+button{
+    padding:10px;
+    color:red;
+}
+button:hover{
+	background-color:green;
+}
+button:active{
+	background-color:red;
+}
